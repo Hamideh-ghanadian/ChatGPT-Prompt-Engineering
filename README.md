@@ -15,10 +15,9 @@ _ = load_dotenv(find_dotenv())
 openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 #### helper function
-Throughout this course, we will use OpenAI's `gpt-3.5-turbo` model and the [chat completions endpoint](https://platform.openai.com/docs/guides/chat). 
+We will use OpenAI's `gpt-3.5-turbo` model and the [chat completions endpoint](https://platform.openai.com/docs/guides/chat). 
 
-This helper function will make it easier to use prompts and look at the generated outputs:
-
+```
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
@@ -27,7 +26,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
         temperature=0, # this is the degree of randomness of the model's output
     )
     return response.choices[0].message["content"]
-
+```
 ## Prompting Principles
 - **Principle 1: Write clear and specific instructions**
 - **Principle 2: Give the model time to “think”**
@@ -36,7 +35,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 
 #### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 - Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
-
+``````
 text = f"""
 You should express what you want a model to do by \ 
 providing instructions that are as clear and \ 
@@ -56,7 +55,7 @@ into a single sentence.
 """
 response = get_completion(prompt)
 print(response)
-
+```
 #### Tactic 2: Ask for a structured output
 - JSON, HTML
 
