@@ -338,11 +338,6 @@ The seat is made of HD36 foam, ensuring comfort and support.
     <td>41 cm | 16.14"</td>
     <td></td>
   </tr>
-  <tr>
-    <td>Product ID</td>
-    <td>SWC-100, SWC-110</td>
-    <td></td>
-  </tr>
 </table>
 
 
