@@ -126,7 +126,10 @@ print(response)
 ```
 Output
 ```
-Introducing our mid-century inspired office chair, perfect for home or business settings. Available in a range of shell colors and base finishes, with or without armrests. Choose from 10 fabric and 6 leather options for full or plastic upholstery. With a 5-wheel base and pneumatic chair adjust, it's both stylish and functional. Made in Italy.
+Introducing our mid-century inspired office chair, perfect for home or business settings.\
+Available in a range of shell colors and base finishes, with or without armrests. Choose\
+from 10 fabric and 6 leather options for full or plastic upholstery. With a 5-wheel base\
+and pneumatic chair adjust, it's both stylish and functional. Made in Italy.
 ```
 ```python
 len(response)
@@ -165,6 +168,7 @@ range of shell colors and base finishes, including stainless steel and matte bla
 with or without armrests. The 5-wheel plastic coated aluminum base and pneumatic chair adjust make it\
 easy to move and adjust to your desired height. Made with high-quality materials, including a cast\
 aluminum shell and HD36 foam seat, this chair is built to last.
+```
 ```python
 prompt = f"""
 Your task is to help a marketing team create a 
