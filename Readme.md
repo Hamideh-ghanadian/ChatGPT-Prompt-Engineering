@@ -1,1 +1,1 @@
-This mini-courese is inspired from DeepLearning.AI website for Promp Engineering.
+This mini-coures is inspired from DeepLearning.AI website for Promp Engineering.
