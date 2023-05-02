@@ -4,8 +4,8 @@ Two prompting principles and their related tactics in order to write effective p
 
 ## Setup
 #### Load the API key and relevant Python libaries.
-`code`
-//
+
+```
 import openai
 import os
 
@@ -13,7 +13,7 @@ from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())
 
 openai.api_key  = os.getenv('OPENAI_API_KEY')
-
+```
 #### helper function
 Throughout this course, we will use OpenAI's `gpt-3.5-turbo` model and the [chat completions endpoint](https://platform.openai.com/docs/guides/chat). 
 
