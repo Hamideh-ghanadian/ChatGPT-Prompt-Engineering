@@ -136,3 +136,79 @@ Output
 344
 ```
 #### Issue 2. Text focuses on the wrong details
+Ask it to focus on the aspects that are relevant to the intended audience.
+```python
+prompt = f"""
+Your task is to help a marketing team create a 
+description for a retail website of a product based 
+on a technical fact sheet.
+​
+Write a product description based on the information 
+provided in the technical specifications delimited by 
+triple backticks.
+​
+The description is intended for furniture retailers, 
+so should be technical in nature and focus on the 
+materials the product is constructed from.
+​
+Use at most 50 words.
+​
+Technical specifications: ```{fact_sheet_chair}```
+"""
+response = get_completion(prompt)
+print(response)
+```
+Output
+```
+Introducing our mid-century inspired office chair, perfect for both home and business settings. With a \
+range of shell colors and base finishes, including stainless steel and matte black, this chair is available\
+with or without armrests. The 5-wheel plastic coated aluminum base and pneumatic chair adjust make it\
+easy to move and adjust to your desired height. Made with high-quality materials, including a cast\
+aluminum shell and HD36 foam seat, this chair is built to last.
+```python
+prompt = f"""
+Your task is to help a marketing team create a 
+description for a retail website of a product based 
+on a technical fact sheet.
+​
+Write a product description based on the information 
+provided in the technical specifications delimited by 
+triple backticks.
+​
+The description is intended for furniture retailers, 
+so should be technical in nature and focus on the 
+materials the product is constructed from.
+​
+At the end of the description, include every 7-character 
+Product ID in the technical specification.
+​
+Use at most 50 words.
+​
+Technical specifications: ```{fact_sheet_chair}```
+"""
+response = get_completion(prompt)
+print(response)
+```
+Output
+```
+Introducing our mid-century inspired office chair, perfect for home or business settings.\
+With a range of shell colors and base finishes, and the option of plastic or full upholstery, \
+this chair is both stylish and comfortable. Constructed with a 5-wheel plastic coated aluminum \
+base and pneumatic chair adjust, it's also practical. Available with or without armrests and \
+suitable for contract use. Product ID: SWC-100, SWC-110.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
