@@ -309,22 +309,39 @@ The seat is made of HD36 foam, ensuring comfort and support.
 ```
 <table>
   <tr>
-    <th>Construction</th>
-    <th>Materials</th>
-    <th>Product Dimensions</th>
+    <th></th>
+    <th>Dimensions</th>
+    <th></th>
   </tr>
   <tr>
-    <td>The chair features a 5-wheel plastic coated aluminum base and a pneumatic chair adjust for easy raise/lower action. You can choose between soft or hard-floor caster options and two choices of seat foam densities: medium (1.8 lb/ft3) or high (2.8 lb/ft3). The chair is also available with armless or 8 position PU armrests.</td>
-    <td>The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, and the shell thickness is 10 mm. The seat is made of HD36 foam, ensuring comfort and support.</td>
-    <td>
-      <ul>
-        <li>Width: 53 cm | 20.87"</li>
-        <li>Depth: 51 cm | 20.08"</li>
-        <li>Height: 80 cm | 31.50"</li>
-        <li>Seat Height: 44 cm | 17.32"</li>
-        <li>Seat Depth: 41 cm | 16.14"</li>
-      </ul>
-    </td>
+    <td>Width</td>
+    <td>53 cm | 20.87"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Depth</td>
+    <td>51 cm | 20.08"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Height</td>
+    <td>80 cm | 31.50"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Seat Height</td>
+    <td>44 cm | 17.32"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Seat Depth</td>
+    <td>41 cm | 16.14"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Product ID</td>
+    <td>SWC-100, SWC-110</td>
+    <td></td>
   </tr>
 </table>
 
