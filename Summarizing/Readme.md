@@ -87,3 +87,6 @@ Output
 ```
 The panda plush toy is soft, cute, and loved by the recipient, but the price may be too high for its size.
 ```
+#### Comment
+But in these summaries, even though it  generated the information relevant to shipping, 
+it had some other information too, which you could decide may or may not be hopeful. 
