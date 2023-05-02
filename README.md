@@ -8,10 +8,6 @@ Two prompting principles and their related tactics in order to write effective p
 ```python
 import openai
 import os
-
-from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv())
-
 openai.api_key  = os.getenv('OPENAI_API_KEY')
 ```
 #### helper function
