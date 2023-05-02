@@ -336,7 +336,7 @@ The seat is made of HD36 foam, ensuring comfort and support.
 
 Try something, 
 see how it does not yet, fulfill exactly what you want, and then think about how to clarify your instructions, or in some cases, think about how to give 
-it more space to think, to get it closer to delivering the results that you want.
+it more space to think, to get it closer to delivering the results that you want. The key to being an effective prompt engineer isn't so much about knowing the perfect prompt, it's about having a good process to develop prompts that are effective for your application.
 
 
 
