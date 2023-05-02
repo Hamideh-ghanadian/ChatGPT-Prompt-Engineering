@@ -290,22 +290,60 @@ display(HTML(response))
 Output
 ```
 Mid-Century Inspired Office Chair
-Introducing our mid-century inspired office chair, part of a beautiful family of office furniture that includes filing cabinets, desks, bookcases, meeting tables, and more. This chair is available in several options of shell color and base finishes, allowing you to customize it to your liking. You can choose between plastic back and front upholstery or full upholstery in 10 fabric and 6 leather options. The base finish options are stainless steel, matte black, gloss white, or chrome. The chair is also available with or without armrests, making it suitable for both home and business settings. Plus, it's qualified for contract use, so you can trust its durability and quality.
+Introducing our mid-century inspired office chair, part of a beautiful family of office furniture that 
+includes filing cabinets, desks, bookcases, meeting tables, and more. This chair is available in several
+options of shell color and base finishes, allowing you to customize it to your liking. You can choose
+between plastic back and front upholstery or full upholstery in 10 fabric and 6 leather options. The base
+finish options are stainless steel, matte black, gloss white, or chrome. The chair is also available with 
+or without armrests, making it suitable for both home and business settings. Plus, it's qualified for contract
+use, so you can trust its durability and quality.
 
 Construction
-The chair features a 5-wheel plastic coated aluminum base and a pneumatic chair adjust for easy raise/lower action. You can choose between soft or hard-floor caster options and two choices of seat foam densities: medium (1.8 lb/ft3) or high (2.8 lb/ft3). The chair is also available with armless or 8 position PU armrests.
+The chair features a 5-wheel plastic coated aluminum base and a pneumatic chair adjust for easy raise/lower action.
+You can choose between soft or hard-floor caster options and two choices of seat foam densities: medium (1.8 lb/ft3) 
+or high (2.8 lb/ft3). The chair is also available with armless or 8 position PU armrests.
 
 Materials
-The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, and the shell thickness is 10 mm. The seat is made of HD36 foam, ensuring comfort and support.
+The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, and the shell thickness is 10 mm. 
+The seat is made of HD36 foam, ensuring comfort and support.
 
-Product Dimensions
-Width	53 cm | 20.87"
-Depth	51 cm | 20.08"
-Height	80 cm | 31.50"
-Seat Height	44 cm | 17.32"
-Seat Depth	41 cm | 16.14"
-Product ID
-SWC-100, SWC-110
+<table>
+  <tr>
+    <th></th>
+    <th>Dimensions</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Width</td>
+    <td>53 cm | 20.87"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Depth</td>
+    <td>51 cm | 20.08"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Height</td>
+    <td>80 cm | 31.50"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Seat Height</td>
+    <td>44 cm | 17.32"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Seat Depth</td>
+    <td>41 cm | 16.14"</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Product ID</td>
+    <td>SWC-100, SWC-110</td>
+    <td></td>
+  </tr>
+</table>
 ```
 
 
