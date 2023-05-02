@@ -58,7 +58,7 @@ response = get_completion(prompt)
 print(response)
 ```
  Output
-```python
+```
 To guide a model towards the desired output and reduce the chances of irrelevant or incorrect responses, it is important to provide clear and specific instructions, which may require longer prompts for more clarity and context.
 ```
 
@@ -75,7 +75,7 @@ response = get_completion(prompt)
 print(response)
 ```
 Output
-```python
+```
 [
   {
     "book_id": 1,
@@ -130,7 +130,7 @@ print("Completion for Text 1:")
 print(response)
 ```
 Output
-```python
+```
 Completion for Text 1:
 Step 1 - Get some water boiling.
 Step 2 - Grab a cup and put a tea bag in it.
@@ -173,7 +173,7 @@ print("Completion for Text 2:")
 print(response)
 ```
 Output
-```python
+```
 Completion for Text 2:
 No steps provided.
 ```
@@ -196,11 +196,11 @@ response = get_completion(prompt)
 print(response)
 ```
 Output
-```python
-
+```
 <grandparent>: Resilience is like a tree that bends with the wind but never breaks.\
 It is the ability to bounce back from adversity and keep moving forward, even when things get tough.\
-Just like a tree that grows stronger with each storm it weathers, resilience is a quality that can be developed and strengthened over time.
+Just like a tree that grows stronger with each storm it weathers, resilience is a quality that can\
+be developed and strengthened over time.
 ```
 
 ### Principle 2: Give the model time to “think” 
@@ -237,6 +237,24 @@ response = get_completion(prompt_1)
 print("Completion for prompt 1:")
 print(response)
 ```
+```
+Completion for prompt 1:
+Two siblings, Jack and Jill, go on a quest to fetch water from a hilltop well,\
+but misfortune strikes as they both fall down the hill, yet they return home slightly \
+battered but with their adventurous spirits undimmed.
+
+Deux frères et sœurs, Jack et Jill, partent en quête d'eau d'un puits au sommet d'une colline,\
+mais ils tombent tous les deux et retournent chez eux légèrement meurtris mais\
+avec leur esprit d'aventure intact. 
+Noms: Jack, Jill.
+
+{
+"french_summary": "Deux frères et sœurs, Jack et Jill, partent en quête d'eau d'un puits au sommet d'une colline,
+mais ils tombent tous les deux et retournent chez eux légèrement meurtris mais avec leur esprit d'aventure intact.",
+"num_names": 2
+}
+```
+As you can see the Names are printed as Noms, whichis French. to fix this problem we can ask for output in specific format.
 #### Ask for output in a specified format
 ```python
 prompt_2 = f"""
