@@ -135,3 +135,4 @@ Output
 ```
 344
 ```
+#### Issue 2. Text focuses on the wrong details
