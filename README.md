@@ -1,12 +1,10 @@
 # ChatGPT-Prompt-Engineering
 # Guidelines for Prompting
-In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
+Two prompting principles and their related tactics in order to write effective prompts for large language models.
 
 ## Setup
 #### Load the API key and relevant Python libaries.
-
-In this course, we've provided some code that loads the OpenAI API key for you.
-
+//
 import openai
 import os
 
