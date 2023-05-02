@@ -254,7 +254,7 @@ mais ils tombent tous les deux et retournent chez eux légèrement meurtris mais
 "num_names": 2
 }
 ```
-As you can see the Names are printed as Noms, whichis French. to fix this problem we can ask for output in specific format.
+As you can see the "Names" are printed as "Noms", which is French. to fix this problem we can ask for output in specific format.
 #### Ask for output in a specified format
 ```python
 prompt_2 = f"""
@@ -278,6 +278,17 @@ Text: <{text}>
 response = get_completion(prompt_2)
 print("\nCompletion for prompt 2:")
 print(response)
+```
+Output
+```
+Completion for prompt 2:
+Summary: Jack and Jill go on a quest to fetch water, but misfortune strikes and they tumble down the hill,\
+returning home slightly battered but with their adventurous spirits undimmed. 
+Translation: Jack et Jill partent en quête d'eau, mais la malchance frappe et ils dégringolent la colline,\
+rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.
+Names: Jack, Jill
+Output JSON: {"french_summary": "Jack et Jill partent en quête d'eau, mais la malchance frappe et ils \
+dégringolent la colline, rentrant chez eux légèrement meurtris mais avec leurs esprits aventureux intacts.", "num_names": 2}
 ```
 #### Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion
 ```python
@@ -305,6 +316,10 @@ Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
 """
 response = get_completion(prompt)
 print(response)
+```
+Output
+```
+The student's solution is correct.
 ```
 #### Note that the student's solution is actually not correct.
 #### We can fix this by instructing the model to work out its own solution first.
@@ -368,6 +383,23 @@ Actual solution:
 response = get_completion(prompt)
 print(response)
 ```
+Output
+```
+Let x be the size of the installation in square feet.
+
+Costs:
+1. Land cost: 100x
+2. Solar panel cost: 250x
+3. Maintenance cost: 100,000 + 10x
+
+Total cost: 100x + 250x + 100,000 + 10x = 360x + 100,000
+
+Is the student's solution the same as actual solution just calculated:
+No
+
+Student grade:
+Incorrect
+```
 
 ## Model Limitations: Hallucinations
 - Boie is a real company, the product name is not real.
@@ -378,10 +410,28 @@ Tell me about AeroGlide UltraSlim Smart Toothbrush by Boie
 response = get_completion(prompt)
 print(response)
 ```
+Output
+```
 
+The AeroGlide UltraSlim Smart Toothbrush by Boie is a high-tech toothbrush that uses advanced sonic\
+technology to provide a deep and thorough clean. It features a slim and sleek design that makes it easy\
+to hold and maneuver, and it comes with a range of smart features that help you optimize your brushing routine.
 
+One of the key features of the AeroGlide UltraSlim Smart Toothbrush is its advanced sonic technology, \
+which uses high-frequency vibrations to break up plaque and bacteria on your teeth and gums. \
+This technology is highly effective at removing even the toughest stains and buildup, leaving\
+your teeth feeling clean and fresh.
 
+In addition to its sonic technology, the AeroGlide UltraSlim Smart Toothbrush also comes with a\
+range of smart features that help you optimize your brushing routine. These include a built-in timer \
+that ensures you brush for the recommended two minutes, as well as a pressure sensor that alerts you \
+if you're brushing too hard.
 
+Overall, the AeroGlide UltraSlim Smart Toothbrush by Boie is a highly advanced and effective toothbrush\
+that is perfect for anyone looking to take their oral hygiene to the next level. With its advanced \
+sonic technology and smart features, it provides a deep and thorough clean that leaves your teeth feeling fresh and healthy.
+
+```
 #### Important notes on using the OpenAI API 
 
 To install the OpenAI Python library:
