@@ -35,7 +35,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 
 #### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 - Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
-``````
+```
 text = f"""
 You should express what you want a model to do by \ 
 providing instructions that are as clear and \ 
@@ -55,6 +55,7 @@ into a single sentence.
 """
 response = get_completion(prompt)
 print(response)
+
 ```
 #### Tactic 2: Ask for a structured output
 - JSON, HTML
