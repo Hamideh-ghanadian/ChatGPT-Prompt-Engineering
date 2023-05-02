@@ -306,7 +306,9 @@ or high (2.8 lb/ft3). The chair is also available with armless or 8 position PU 
 Materials
 The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, and the shell thickness is 10 mm. 
 The seat is made of HD36 foam, ensuring comfort and support.
+from IPython.display import HTML
 
+html = '''
 <table>
   <tr>
     <th></th>
@@ -344,6 +346,9 @@ The seat is made of HD36 foam, ensuring comfort and support.
     <td></td>
   </tr>
 </table>
+'''
+
+display(HTML(html))
 ```
 
 
