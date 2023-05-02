@@ -27,10 +27,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     )
     return response.choices[0].message["content"]
 ```
- Output
-```python
-To guide a model towards the desired output and reduce the chances of irrelevant or incorrect responses, it is important to provide clear and specific instructions, which may require longer prompts for more clarity and context.
-```
+
 ## Prompting Principles
 - **Principle 1: Write clear and specific instructions**
 - **Principle 2: Give the model time to “think”**
@@ -60,6 +57,23 @@ into a single sentence.
 response = get_completion(prompt)
 print(response)
 ```
+ Output
+```python
+To guide a model towards the desired output and reduce the chances of irrelevant or incorrect responses, it is important to provide clear and specific instructions, which may require longer prompts for more clarity and context.
+```
+
+#### Tactic 2: Ask for a structured output
+- JSON, HTML
+```python
+prompt = f"""
+Generate a list of three made-up book titles along \ 
+with their authors and genres. 
+Provide them in JSON format with the following keys: 
+book_id, title, author, genre.
+"""
+response = get_completion(prompt)
+print(response)
+```
 Output
 ```python
 [
@@ -82,18 +96,6 @@ Output
     "genre": "Mystery"
   }
 ]
-```
-#### Tactic 2: Ask for a structured output
-- JSON, HTML
-```python
-prompt = f"""
-Generate a list of three made-up book titles along \ 
-with their authors and genres. 
-Provide them in JSON format with the following keys: 
-book_id, title, author, genre.
-"""
-response = get_completion(prompt)
-print(response)
 ```
 #### Tactic 3: Ask the model to check whether conditions are satisfied
 ```python
@@ -127,6 +129,18 @@ response = get_completion(prompt)
 print("Completion for Text 1:")
 print(response)
 ```
+Output
+```python
+Completion for Text 1:
+Step 1 - Get some water boiling.
+Step 2 - Grab a cup and put a tea bag in it.
+Step 3 - Once the water is hot enough, pour it over the tea bag.
+Step 4 - Let it sit for a bit so the tea can steep.
+Step 5 - After a few minutes, take out the tea bag.
+Step 6 - Add some sugar or milk to taste.
+Step 7 - Enjoy your delicious cup of tea!
+```
+
 ```python
 text_2 = f"""
 The sun is shining brightly today, and the birds are \
@@ -158,6 +172,11 @@ response = get_completion(prompt)
 print("Completion for Text 2:")
 print(response)
 ```
+Output
+```python
+Completion for Text 2:
+No steps provided.
+```
 
 #### Tactic 4: "Few-shot" prompting
 ```python
@@ -176,6 +195,14 @@ the most intricate tapestry begins with a solitary thread.
 response = get_completion(prompt)
 print(response)
 ```
+Output
+```python
+
+<grandparent>: Resilience is like a tree that bends with the wind but never breaks.\
+It is the ability to bounce back from adversity and keep moving forward, even when things get tough.\
+Just like a tree that grows stronger with each storm it weathers, resilience is a quality that can be developed and strengthened over time.
+```
+
 ### Principle 2: Give the model time to “think” 
 
 #### Tactic 1: Specify the steps required to complete a task
