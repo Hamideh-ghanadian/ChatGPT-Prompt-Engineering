@@ -59,7 +59,29 @@ into a single sentence.
 """
 response = get_completion(prompt)
 print(response)
-
+```
+Output
+```python
+[
+  {
+    "book_id": 1,
+    "title": "The Lost City of Zorath",
+    "author": "Aria Blackwood",
+    "genre": "Fantasy"
+  },
+  {
+    "book_id": 2,
+    "title": "The Last Survivors",
+    "author": "Ethan Stone",
+    "genre": "Science Fiction"
+  },
+  {
+    "book_id": 3,
+    "title": "The Secret of the Haunted Mansion",
+    "author": "Lila Rose",
+    "genre": "Mystery"
+  }
+]
 ```
 #### Tactic 2: Ask for a structured output
 - JSON, HTML
