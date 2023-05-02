@@ -5,7 +5,7 @@ Two prompting principles and their related tactics in order to write effective p
 ## Setup
 #### Load the API key and relevant Python libaries.
 
-```
+```python
 import openai
 import os
 
