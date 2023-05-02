@@ -311,32 +311,26 @@ The seat is made of HD36 foam, ensuring comfort and support.
   <tr>
     <th></th>
     <th>Dimensions</th>
-    <th></th>
   </tr>
   <tr>
     <td>Width</td>
     <td>53 cm | 20.87"</td>
-    <td></td>
   </tr>
   <tr>
     <td>Depth</td>
     <td>51 cm | 20.08"</td>
-    <td></td>
   </tr>
   <tr>
     <td>Height</td>
     <td>80 cm | 31.50"</td>
-    <td></td>
   </tr>
   <tr>
     <td>Seat Height</td>
     <td>44 cm | 17.32"</td>
-    <td></td>
   </tr>
   <tr>
     <td>Seat Depth</td>
     <td>41 cm | 16.14"</td>
-    <td></td>
   </tr>
 </table>
 
