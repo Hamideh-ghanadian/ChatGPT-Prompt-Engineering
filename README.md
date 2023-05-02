@@ -17,7 +17,7 @@ openai.api_key  = os.getenv('OPENAI_API_KEY')
 #### helper function
 We will use OpenAI's `gpt-3.5-turbo` model and the [chat completions endpoint](https://platform.openai.com/docs/guides/chat). 
 
-```
+```python
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
     response = openai.ChatCompletion.create(
@@ -35,7 +35,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 
 #### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 - Delimiters can be anything like: ```, """, < >, `<tag> </tag>`, `:`
-```
+```python
 text = f"""
 You should express what you want a model to do by \ 
 providing instructions that are as clear and \ 
@@ -59,7 +59,7 @@ print(response)
 ```
 #### Tactic 2: Ask for a structured output
 - JSON, HTML
-```
+```python
 prompt = f"""
 Generate a list of three made-up book titles along \ 
 with their authors and genres. 
@@ -70,7 +70,7 @@ response = get_completion(prompt)
 print(response)
 ```
 #### Tactic 3: Ask the model to check whether conditions are satisfied
-```
+```python
 text_1 = f"""
 Making a cup of tea is easy! First, you need to get some \ 
 water boiling. While that's happening, \ 
@@ -101,7 +101,7 @@ response = get_completion(prompt)
 print("Completion for Text 1:")
 print(response)
 ```
-```
+```python
 text_2 = f"""
 The sun is shining brightly today, and the birds are \
 singing. It's a beautiful day to go for a \ 
@@ -134,7 +134,7 @@ print(response)
 ```
 
 #### Tactic 4: "Few-shot" prompting
-```
+```python
 prompt = f"""
 Your task is to answer in a consistent style.
 
@@ -153,7 +153,7 @@ print(response)
 ### Principle 2: Give the model time to “think” 
 
 #### Tactic 1: Specify the steps required to complete a task
-```
+```python
 text = f"""
 In a charming village, siblings Jack and Jill set out on \ 
 a quest to fetch water from a hilltop \ 
@@ -185,7 +185,7 @@ print("Completion for prompt 1:")
 print(response)
 ```
 #### Ask for output in a specified format
-```
+```python
 prompt_2 = f"""
 Your task is to perform the following actions: 
 1 - Summarize the following text delimited by 
@@ -209,7 +209,7 @@ print("\nCompletion for prompt 2:")
 print(response)
 ```
 #### Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion
-```
+```python
 prompt = f"""
 Determine if the student's solution is correct or not.
 
@@ -237,7 +237,7 @@ print(response)
 ```
 #### Note that the student's solution is actually not correct.
 #### We can fix this by instructing the model to work out its own solution first.
-```
+```python
 prompt = f"""
 Your task is to determine if the student's solution \
 is correct or not.
@@ -300,7 +300,7 @@ print(response)
 
 ## Model Limitations: Hallucinations
 - Boie is a real company, the product name is not real.
-```
+```python
 prompt = f"""
 Tell me about AeroGlide UltraSlim Smart Toothbrush by Boie
 """
@@ -314,20 +314,20 @@ print(response)
 #### Important notes on using the OpenAI API 
 
 To install the OpenAI Python library:
-```
+```python
 !pip install openai
 ```
 
 The library needs to be configured with your account's secret key, which is available on the [website](https://platform.openai.com/account/api-keys). 
 
 You can either set it as the `OPENAI_API_KEY` environment variable before using the library:
- ```
+ ```python
  !export OPENAI_API_KEY='sk-...'
  ```
 
 Or, set `openai.api_key` to its value:
 
-```
+```python
 import openai
 openai.api_key = "sk-..."
 ```
