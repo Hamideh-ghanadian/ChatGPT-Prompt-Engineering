@@ -100,7 +100,7 @@ then simply write \"No steps provided.\"
 response = get_completion(prompt)
 print("Completion for Text 1:")
 print(response)
-
+```
 ```
 text_2 = f"""
 The sun is shining brightly today, and the birds are \
